@@ -1,10 +1,12 @@
 function names(firstName, lastName){
-    this.firstName = firstName;
-    this.lastName = lastName;
+    return {
+        firstName: firstName,
+        lastName: lastName
+    }
 }
 
 module.exports = names;
 
-//const emilio = new names ("Emilio", "De Chiara");
+//const emilio = names("Emilio", "De Chiara");
 
 //console.log(emilio);

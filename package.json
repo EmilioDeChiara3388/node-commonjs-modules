@@ -4,7 +4,7 @@
   "main": "hobbies.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node people.js"
+    "start": "node names.js"
   },
   "keywords": [],
   "author": "",
