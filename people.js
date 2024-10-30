@@ -3,22 +3,18 @@
 const names = require("./names");
 const yourHobbies = require("./hobbies")
 
-
-
 //console.log(emilio);
-
 //console.log(yourHobbies("basket", "cinema", "tv"));
 
-const {firstName, lastName} = names();
-const {hobbies} = yourHobbies()
 function people(){
-    return person = {
-        firstName,
-        lastName,
-        hobbies
-    }
-        
-    
+    const emilio = names("Emilio", "De Chiara");
+
+    const emiliosHobbies = yourHobbies("Serie tv", "Basket", "Lettura")
+
+    const newPerson = {...emilio, ...emiliosHobbies}
+
+    return newPerson
 }
- console.log(people());
+
+console.log(people());
  
